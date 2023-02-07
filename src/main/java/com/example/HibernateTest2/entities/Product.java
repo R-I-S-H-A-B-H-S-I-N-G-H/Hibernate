@@ -1,8 +1,5 @@
 package com.example.HibernateTest2.entities;
 
-import org.springframework.stereotype.Component;
-
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
