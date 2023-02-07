@@ -12,17 +12,12 @@ import jakarta.persistence.Table;
 public class Product {
     @Id
     private int id;
-    private String desc;
 
-    // public Product(int id, String desc) {
-    // this.id = id;
-    // this.desc = desc;
-    // }
+    public Product() {
 
-    @Override
-    public String toString() {
-        return "Product [id=" + id + ", desc=" + desc + "]";
     }
+
+    private String description;
 
     public int getId() {
         return id;
@@ -32,12 +27,17 @@ public class Product {
         this.id = id;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "Product [id=" + id + ", description=" + description + "]";
     }
 
 }
